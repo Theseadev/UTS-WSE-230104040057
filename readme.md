@@ -125,6 +125,6 @@ Upload screenshot Postman untuk 5 endpoint berikut:
 
 **Nama:** Muhammad Fahrul Bahri\
 **Mata Kuliah:** Web Service Engineering\
-**Dosen:** Muhayat, M.IT
+**Dosen:** Muhayat, S.Ag, M.IT
 
 ------------------------------------------------------------------------
