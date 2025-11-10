@@ -1,83 +1,85 @@
-# UTS Web Service Engineering -- RESTful API (Articles)
+# UTS Web Service Engineering — RESTful API (Articles)
+
+## 👤 Identitas
+**Nama:** Muhammad Fahrul Bahri  
+**NIM:** 230104040057  
+**Kelas:** TI23B  
+**Mata Kuliah:** Web Service Engineering  
+**Dosen:** Muhayat, S.Ag, M.IT  
+
+---
 
 ## 📌 Deskripsi Project
+Project ini merupakan implementasi RESTful API menggunakan **Node.js + Express.js** dengan fokus pada resource:
 
-Project ini merupakan implementasi RESTful API menggunakan **Node.js +
-Express.js** sesuai ketentuan UTS Web Service Engineering. Resource yang
-digunakan adalah:
+- **Resource:** `articles`
+- **Field wajib:** `title`, `author`, `content`
 
--   **Resource:** `articles`
--   **Fields wajib:** `title`, `author`, `content`
+API ini telah mendukung:  
+✅ CRUD lengkap  
+✅ Validasi input  
+✅ Error handling  
+✅ Penerapan 7 prinsip RESTful API  
 
-API mendukung operasi CRUD lengkap, validasi input, error handling, dan
-menerapkan 7 prinsip RESTful API.
-
-------------------------------------------------------------------------
+---
 
 ## 📁 Struktur Folder
+```
+UTS-WSE-230104040057/
+│── app.js
+│── package.json
+│── data/
+│     └── articles.json
+│
+├── controllers/
+│     └── articlesController.js
+│
+├── routes/
+│     └── articlesRoutes.js
+│
+└── utils/
+      └── response.js
+```
 
-    UTS-WSE-NIM/
-    │── app.js
-    │── package.json
-    │── data/
-    │     └── articles.json
-    │
-    ├── controllers/
-    │     └── articlesController.js
-    │
-    ├── routes/
-    │     └── articlesRoutes.js
-    │
-    └── utils/
-          └── response.js
-
-------------------------------------------------------------------------
+---
 
 ## 🚀 Cara Menjalankan
 
-1.  Install dependencies:
-
-```{=html}
-<!-- -->
+1. Install dependency:
 ```
-    npm install
-
-2.  Jalankan server:
-
-```{=html}
-<!-- -->
+npm install
 ```
-    npm run dev
 
-3.  Server berjalan di:
-
-```{=html}
-<!-- -->
+2. Jalankan server:
 ```
-    http://localhost:3000
+npm run dev
+```
 
-------------------------------------------------------------------------
+3. Akses API:
+```
+http://localhost:3000
+```
 
-## 📚 **Endpoint RESTful API**
+---
 
-### ✅ **Tabel Endpoint CRUD**
+## 📚 Tabel Endpoint RESTful API
 
-  Method   Endpoint              Deskripsi                      Status Code
-  -------- --------------------- ------------------------------ -----------------
-  GET      `/api/articles`       Ambil semua artikel            200
-  GET      `/api/articles/:id`   Ambil artikel berdasarkan ID   200 / 404
-  POST     `/api/articles`       Tambah artikel baru            201 / 400
-  PUT      `/api/articles/:id`   Update artikel                 200 / 400 / 404
-  DELETE   `/api/articles/:id`   Hapus artikel                  204 / 404
-  GET      `/api/info`           Informasi API                  200
+| Method | Endpoint             | Deskripsi                | Status          |
+|--------|----------------------|--------------------------|-----------------|
+| GET    | /api/articles        | Ambil semua artikel      | 200             |
+| GET    | /api/articles/:id    | Ambil artikel by ID      | 200 / 404       |
+| POST   | /api/articles        | Tambah artikel baru      | 201 / 400       |
+| PUT    | /api/articles/:id    | Update full artikel      | 200 / 400 / 404 |
+| PATCH  | /api/articles/:id    | Update sebagian artikel  | 200 / 404       |
+| DELETE | /api/articles/:id    | Hapus artikel            | 204 / 404       |
+| GET    | /api/info            | Cek status API           | 200             |
 
-------------------------------------------------------------------------
+---
 
 ## ✅ Contoh JSON Body
 
-### **POST /api/articles**
-
-``` json
+### POST /api/articles
+```json
 {
   "title": "Node.js Dasar",
   "author": "Fahrul Bahri",
@@ -85,9 +87,8 @@ menerapkan 7 prinsip RESTful API.
 }
 ```
 
-### **PUT /api/articles/:id**
-
-``` json
+### PUT /api/articles/:id
+```json
 {
   "title": "Artikel Updated",
   "author": "Fahrul",
@@ -95,36 +96,28 @@ menerapkan 7 prinsip RESTful API.
 }
 ```
 
-------------------------------------------------------------------------
+---
 
-## ✅ 7 Prinsip RESTful API yang Diterapkan
+## ✅ 7 Prinsip RESTful API
 
-1.  **Resource-Oriented URI** -- menggunakan `/api/articles`.
-2.  **Proper HTTP Methods** -- GET, POST, PUT, DELETE.
-3.  **Stateless** -- server tidak menyimpan session.
-4.  **Consistent Status Codes** -- 200, 201, 204, 400, 404.
-5.  **JSON Representation** -- seluruh response menggunakan JSON.
-6.  **Validation & Error Handling** -- validasi field wajib.
-7.  **Discoverability** -- endpoint `/api/info` tersedia.
+1. **Resource-Oriented URI** — `/api/articles`
+2. **Proper HTTP Methods** — GET, POST, PUT, DELETE, PATCH
+3. **Stateless** — server tidak menyimpan session client
+4. **Consistent Status Codes** — 200, 201, 204, 400, 404
+5. **JSON Representation** — request & response berbentuk JSON
+6. **Validation & Error Handling** — pengecekan field wajib
+7. **Discoverability** — endpoint `/api/info` sebagai metadata API
 
-------------------------------------------------------------------------
+---
 
-## ✅ Screenshots Pengujian (Wajib)
+## 📷 Screenshots Pengujian (Wajib)
+Tambahkan screenshot Postman bagian berikut:
 
-Upload screenshot Postman untuk 5 endpoint berikut:
+1. GET all articles  
+2. GET article by ID  
+3. POST create article  
+4. PUT update article  
+5. DELETE article  
 
-1.  GET all articles\
-2.  GET article by ID\
-3.  POST create article\
-4.  PUT update article\
-5.  DELETE article
+---
 
-------------------------------------------------------------------------
-
-## 👤 Identitas
-
-**Nama:** Muhammad Fahrul Bahri\
-**Mata Kuliah:** Web Service Engineering\
-**Dosen:** Muhayat, S.Ag, M.IT
-
-------------------------------------------------------------------------
