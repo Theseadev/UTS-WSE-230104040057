@@ -1,8 +1,12 @@
 [
   {
-    "id": 1,
-    "title": "Belajar REST API Update",
-    "author": "Fahrul",
-    "content": "Update dari artikel sebelumnya."
+    "id": "1",
+    "title": "",
+    "content": ""
+  },
+  {
+    "id": "1763349253574",
+    "title": "Judul Baru",
+    "content": "Konten artikel baru"
   }
 ]
