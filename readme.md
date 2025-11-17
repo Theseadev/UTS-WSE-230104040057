@@ -209,4 +209,38 @@ Mahasiswa wajib mengumpulkan:
 
 ------------------------------------------------------------------------
 
-# **Selesai.**
+## 11. Screenshot
+
+| 500 Error | CORS Error | Delete Error |
+| :---: | :---: | :---: |
+| ![500](bukti/500.png) | ![CORS Error](bukti/CORS%20Error.png) | ![Delete Error](bukti/Delete%20Error.png) |
+
+---
+
+| Delete | GET All | GET By Id Error |
+| :---: | :---: | :---: |
+| ![Delete](bukti/Delete.png) | ![GET All](bukti/GET%20All.png) | ![GET By Id Error](bukti/GET%20By%20Id%20Error.png) |
+
+---
+
+| GET By Id | GET Health | GET Info |
+| :---: | :---: | :---: |
+| ![GET By Id](bukti/GET%20By%20Id.png) | ![GET Health](bukti/GET%20Health.png) | ![GET Info](bukti/GET%20Info.png) |
+
+---
+
+| GET Limiter | GET Metrics | POST Create Error |
+| :---: | :---: | :---: |
+| ![GET Limiter](bukti/GET%20Limiter.png) | ![GET Metrics](bukti/GET%20Metrics.png) | ![POST Create Error](bukti/POST%20Create%20Error.png) |
+
+---
+
+| POST Create | PUT Edit Error 400 | PUT Edit Error 404 |
+| :---: | :---: | :---: |
+| ![POST Create](bukti/POST%20Create.png) | ![PUT Edit Error 400](bukti/PUT%20Edit%20Error%20400.png) | ![PUT Edit Error 404](bukti/PUT%20Edit%20Error%20404.png) |
+
+---
+
+| PUT Edit |
+| :---: |
+| ![PUT Edit](bukti/PUT%20Edit.png) |
